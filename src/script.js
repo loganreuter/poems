@@ -16,12 +16,15 @@ function random(arr){
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const content = document.getElementById("content");
-const text = document.getElementById("text");
+document.addEventListener("DOMContentLoaded", () => {
+    const content = document.getElementById("content");
+    const text = document.getElementById("text");
+    
+    setInterval(() => {
+        text.classList.add("fade");
+        text.innerText = random(poems);
+    
+        content.className = random(colors);
+    }, INTERVAL_LENGTH)
 
-setInterval(() => {
-    text.classList.add("fade");
-    text.innerText = random(poems);
-
-    content.className = random(colors);
-}, INTERVAL_LENGTH)
+})
