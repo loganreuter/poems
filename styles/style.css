@@ -1,0 +1,62 @@
+:root{
+    --blue: #CCE1F2;
+    --green: #C6f8e5;
+    --yellow: #fbf7d5;
+    --orange: #f9ded7;
+    --red: #f5cdde;
+    --purple: #e2bef1;
+    --text-color: #808080;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    30%,100% {opacity: 1;}
+}
+
+#content{
+   width: 100vw;
+   min-height: 100vh; 
+   min-height: -webkit-fill-available;
+   color: var(--text-color);
+   /* background-color: var(--blue); */
+   font-family: Garamond, seruf;
+   font-size: 24px;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   transition: all 2000ms ease-in-out;
+}
+
+.fade{
+    animation: fade infinite ease-in-out;
+    animation-duration: 7500ms;
+}
+
+.blue{
+    background-color: var(--blue);
+}
+.green{
+    background-color: var(--green);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+.orange{
+    background-color: var(--orange);
+}
+.red{
+    background-color: var(--red);
+}
+.purple{
+    background-color: var(--purple);
+}
