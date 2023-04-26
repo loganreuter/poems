@@ -13,9 +13,7 @@ const colors = [
 ]
 
 function random(arr){
-    let i = Math.floor(Math.random() * arr.length)
-    console.log(i)
-    return arr[i];
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
 const content = document.getElementById("content");
